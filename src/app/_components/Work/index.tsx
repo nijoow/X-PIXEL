@@ -14,7 +14,7 @@ const Work = () => {
 
       <div className="h-6" />
 
-      <span className="text-center text-[56px] font-bold whitespace-pre-line">
+      <span className="font-pretendard text-center text-[56px] font-bold whitespace-pre-line">
         {`어떤 비즈니스를 하고 싶으신가요? 
         지금 바로 만들어드립니다.`}
       </span>

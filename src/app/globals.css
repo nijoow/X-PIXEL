@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+@theme {
+  --font-suit: 'SUIT', 'sans-serif';
+  --font-pretendard: 'Pretendard', 'sans-serif';
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

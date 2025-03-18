@@ -4,23 +4,28 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 left-0 flex w-full items-center justify-between py-5">
-      <Image
-        src="logo-light.svg"
-        alt="xPixel Logo"
-        width={95}
-        height={18}
-        unoptimized
-        className="block dark:hidden"
-      />
-      <Image
-        src="logo-dark.svg"
-        alt="xPixel Logo"
-        width={95}
-        height={18}
-        unoptimized
-        className="hidden dark:block"
-      />
+    <header className="sticky top-0 left-0 z-50 flex w-full items-center justify-between py-5">
+      <Link
+        href="#home"
+        className="overflow-hidden rounded-full px-5 py-2.5 backdrop-blur-3xl"
+      >
+        <Image
+          src="logo__light.svg"
+          alt="xPixel Logo"
+          width={95}
+          height={18}
+          unoptimized
+          className="block dark:hidden"
+        />
+        <Image
+          src="logo__dark.svg"
+          alt="xPixel Logo"
+          width={95}
+          height={18}
+          unoptimized
+          className="hidden dark:block"
+        />
+      </Link>
       <ul className="flex items-center gap-10 rounded-full border border-black/5 bg-white/70 py-1.5 pr-1.5 pl-12 backdrop-blur-3xl dark:border-white/5 dark:bg-white/5">
         <li>
           <Link href="#Work">Work</Link>

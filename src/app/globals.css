@@ -12,6 +12,10 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   background-image: url('/background-grid.png');

@@ -1,43 +1,51 @@
-import Image from 'next/image';
 import React from 'react';
-import Slider from './Slider';
+import Image from 'next/image';
+import Chip from './Chip';
 
-const About = () => {
+const GridItem = ({ src, title }: { src: string; title: string }) => {
   return (
-    <div className="flex flex-col items-center pt-20 pb-[7.5rem]">
-      <div className="flex w-fit items-center gap-2 rounded-full border border-[#808080] px-5 py-2.5">
-        <div className="flex size-4 items-center justify-center rounded-full bg-[#168FFF]/15">
-          <div className="size-1.5 rounded-full bg-[#168FFF]" />
-        </div>
-        <span>Subscriptions to the Business Agency team, Xpixel</span>
-      </div>
+    <div className="col-span-1 flex flex-col p-12">
+      <Image src={src} alt="UI/UX" width={88} height={88} />
 
-      <div className="h-6" />
+      <div className="h-[4.75rem]" />
 
-      <span className="text-center text-[56px] font-bold whitespace-pre-line">
-        {`어떤 비즈니스를 하고 싶으신가요? 
-        지금 바로 만들어드립니다.`}
-      </span>
+      <span className="text-[1.75rem] font-bold">{title}</span>
 
       <div className="h-8" />
 
-      <button
-        type="button"
-        className="cursor-pointer rounded-full px-6 py-4 text-sm dark:bg-white dark:text-black"
-      >
-        X PIXEL 시작하기
-      </button>
-
-      <div className="h-16" />
-
-      <div className="relative aspect-[1440/560] w-full">
-        <Image src="/hero-banner.png" alt="About" fill />
+      <div className="flex flex-wrap gap-2">
+        <Chip />
+        <Chip />
+        <Chip /> <Chip />
+        <Chip />
       </div>
-
-      <div className="h-10" />
-
-      <Slider />
     </div>
+  );
+};
+
+const About = () => {
+  return (
+    <section id="About" className="flex scroll-m-24 flex-col items-center">
+      <span className="text-center text-5xl font-bold whitespace-pre-line">
+        Xpixel 모두 다 합니다.
+      </span>
+      <div className="h-6" />
+      <span className="text-center text-lg whitespace-pre-line">
+        {`비즈니스 수요 검증부터 비즈니스 설계 & 디자인 & 마케팅까지
+       전문가로 구성된 팀을 구독하세요.`}
+      </span>
+
+      <div className="h-15" />
+
+      <div className="grid grid-cols-3 rounded-[40px] border-t border-l border-[#202020] [&>div]:border-r [&>div]:border-b [&>div]:border-[#202020]">
+        <GridItem src="/ui-ux__dark.svg" title="UI/UX" />
+        <GridItem src="/branding__dark.svg" title="Branding" />
+        <GridItem src="/contents__dark.svg" title="Contents" />
+        <GridItem src="/product-manager__dark.svg" title="Product Manager" />
+        <GridItem src="/marketing__dark.svg" title="Marketing" />
+        <GridItem src="/no-code__dark.svg" title="No-Code" />
+      </div>
+    </section>
   );
 };
 

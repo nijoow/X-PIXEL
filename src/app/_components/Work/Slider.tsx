@@ -66,37 +66,31 @@ const NextButton = () => {
 
 const Slider = () => {
   return (
-    <>
-      <Swiper
-        spaceBetween={64}
-        slidesPerView={3}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={swiper => {
-          console.log(swiper);
-        }}
-        loop={true}
-        className="flex h-fit w-full flex-col"
-      >
-        <SwiperSlide>
-          <SliderContent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderContent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderContent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderContent />
-        </SwiperSlide>
+    <Swiper
+      spaceBetween={64}
+      slidesPerView={3}
+      loop={true}
+      className="flex h-fit w-full flex-col"
+    >
+      <SwiperSlide>
+        <SliderContent />
+      </SwiperSlide>
+      <SwiperSlide>
+        <SliderContent />
+      </SwiperSlide>
+      <SwiperSlide>
+        <SliderContent />
+      </SwiperSlide>
+      <SwiperSlide>
+        <SliderContent />
+      </SwiperSlide>
 
-        <div className="h-8" />
-        <div className="ml-auto flex w-fit justify-between gap-3">
-          <PrevButton />
-          <NextButton />
-        </div>
-      </Swiper>
-    </>
+      <div className="h-8" />
+      <div className="ml-auto flex w-fit justify-between gap-3">
+        <PrevButton />
+        <NextButton />
+      </div>
+    </Swiper>
   );
 };
 

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 left-0 flex w-full items-center justify-between py-5">
       <Image
-        src="Logo-light.svg"
+        src="logo-light.svg"
         alt="xPixel Logo"
         width={95}
         height={18}
@@ -14,7 +14,7 @@ const Header = () => {
         className="block dark:hidden"
       />
       <Image
-        src="Logo-dark.svg"
+        src="logo-dark.svg"
         alt="xPixel Logo"
         width={95}
         height={18}

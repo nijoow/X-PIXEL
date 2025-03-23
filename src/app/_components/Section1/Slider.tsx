@@ -42,7 +42,7 @@ const PrevButton = () => {
   return (
     <button
       type="button"
-      className="flex size-10 cursor-pointer items-center justify-center rounded-full bg-[#202020]"
+      className="flex size-10 items-center justify-center rounded-full bg-[#202020]"
       onClick={() => swiper.slidePrev()}
     >
       <Image src="arrow-left.svg" alt="Previous" width={24} height={24} />
@@ -56,7 +56,7 @@ const NextButton = () => {
   return (
     <button
       type="button"
-      className="flex size-10 cursor-pointer items-center justify-center rounded-full bg-[#202020]"
+      className="flex size-10 items-center justify-center rounded-full bg-[#202020]"
       onClick={() => swiper.slideNext()}
     >
       <Image src="arrow-right.svg" alt="Next" width={24} height={24} />

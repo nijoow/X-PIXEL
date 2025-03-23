@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Chip from './Chip';
+import Chip from '../../../components/Chip';
 
 const GridItem = ({ src, title }: { src: string; title: string }) => {
   return (
@@ -23,9 +23,9 @@ const GridItem = ({ src, title }: { src: string; title: string }) => {
   );
 };
 
-const About = () => {
+const Section2 = () => {
   return (
-    <section id="About" className="flex scroll-m-24 flex-col items-center">
+    <section className="flex flex-col items-center">
       <span className="text-center text-5xl font-bold whitespace-pre-line">
         Xpixel 모두 다 합니다.
       </span>
@@ -49,4 +49,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Section2;

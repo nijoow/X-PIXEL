@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { suit, pretendard } from '../fonts/font';
 import './globals.css';
+import Header from '../components/Header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +18,10 @@ export default function RootLayout({
       <body
         className={`${suit.variable} ${pretendard.variable} h-full antialiased`}
       >
-        <div className="font-suit mx-auto max-w-[1440px]">{children}</div>
+        <div className="font-suit mx-auto max-w-[1440px]">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );

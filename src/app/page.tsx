@@ -1,4 +1,5 @@
 import FeaturedProject from './_components/FeaturedProject';
+import ProjectProgress from './_components/ProjectProgress';
 import Section1 from './_components/Section1';
 import Section2 from './_components/Section2';
 
@@ -10,6 +11,9 @@ export default function Home() {
       <Section2 />
       <div className="h-40" />
       <FeaturedProject />
+      <div className="h-40" />
+      <ProjectProgress />
+      <div className="h-40" />
     </main>
   );
 }

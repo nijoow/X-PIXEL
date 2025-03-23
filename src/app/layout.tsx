@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={`${suit.variable} ${pretendard.variable} h-full antialiased`}
       >
-        <div className="font-suit mx-auto max-w-[1440px]">
+        <div className="font-suit">
           <Header />
           {children}
         </div>

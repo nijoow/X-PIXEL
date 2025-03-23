@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 left-0 z-50 flex w-full items-center justify-between py-5">
+    <header className="sticky top-0 left-0 z-50 mx-auto flex w-full max-w-[1440px] items-center justify-between py-5">
       <Link
         href="#home"
         className="overflow-hidden rounded-full px-5 py-2.5 backdrop-blur-3xl"

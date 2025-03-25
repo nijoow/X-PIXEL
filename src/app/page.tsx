@@ -6,8 +6,8 @@ import SubscriptionPlan from './_components/SubscriptionPlan';
 
 export default function Home() {
   return (
-    <main className="relative mx-auto pt-20">
-      <div className="mx-auto max-w-[1440px] px-8">
+    <main className="relative mx-auto w-full pt-20">
+      <div className="mx-auto w-full max-w-[1440px] px-8">
         <Section1 />
         <div className="h-40" />
         <Section2 />

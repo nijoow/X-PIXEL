@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import MobileNav from './MobileNav';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 left-0 z-50 mx-auto flex w-full max-w-[1440px] items-center justify-between py-5">
+    <header className="sticky top-0 left-0 z-50 mx-auto flex h-24 w-full max-w-[1440px] items-center justify-between px-4 py-5 md:h-auto">
       <Link
-        href="#home"
-        className="overflow-hidden rounded-full px-5 py-2.5 backdrop-blur-3xl"
+        href="/"
+        className="z-40 overflow-hidden rounded-full px-5 py-2.5 backdrop-blur-3xl"
       >
         <Image
           src="logo__light.svg"
@@ -26,23 +27,18 @@ const Header = () => {
           className="hidden dark:block"
         />
       </Link>
-      <ul className="flex items-center gap-10 rounded-full border border-black/5 bg-white/70 py-1.5 pr-1.5 pl-12 backdrop-blur-3xl dark:border-white/5 dark:bg-white/5">
-        <li>
-          <Link href="#Work">Work</Link>
-        </li>
-        <li>
-          <Link href="#About">About</Link>
-        </li>
-        <li>
-          <Link href="#Blog">Blog</Link>
-        </li>
-        <li>
-          <Link href="#Contact">Contact</Link>
-        </li>
+
+      <nav className="hidden items-center gap-10 rounded-full border border-black/5 bg-white/70 py-1.5 pr-1.5 pl-12 backdrop-blur-3xl md:flex dark:border-white/5 dark:bg-white/5">
+        <Link href="#">Work</Link>
+        <Link href="#">About</Link>
+        <Link href="#">Blog</Link>
+        <Link href="#">Contact</Link>
         <button className="rounded-full px-6 py-4 text-sm dark:bg-white dark:text-black">
           X PIXEL 시작하기
         </button>
-      </ul>
+      </nav>
+
+      <MobileNav />
     </header>
   );
 };

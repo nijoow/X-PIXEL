@@ -25,7 +25,7 @@ const Section1 = () => {
 
       <button
         type="button"
-        className="rounded-full px-6 py-4 text-sm dark:bg-white dark:text-black"
+        className="rounded-full bg-white px-6 py-4 text-sm text-black"
       >
         X PIXEL 시작하기
       </button>

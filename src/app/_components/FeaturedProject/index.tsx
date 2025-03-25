@@ -14,14 +14,14 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={cn('relative overflow-hidden rounded-[48px]', {
-        'col-span-1 aspect-square': col === 1,
-        'col-span-2 aspect-[2/1]': col === 2,
+      className={cn('@container relative overflow-hidden rounded-[48px]', {
+        'col-span-12 aspect-square sm:col-span-6': col === 1,
+        'col-span-12 aspect-[2/1]': col === 2,
       })}
     >
       <Image src={src} alt={alt ?? '프로젝트 이미지'} fill />
 
-      <div className="absolute bottom-12 left-12 flex flex-wrap gap-2">
+      <div className="absolute bottom-8 left-8 flex flex-wrap gap-2 @md:bottom-12 @md:left-12">
         <Chip /> <Chip />
         <Chip />
       </div>
@@ -32,11 +32,11 @@ const ProjectCard = ({
 const FeaturedProject = () => {
   return (
     <section className="flex flex-col items-center">
-      <span className="text-center text-5xl font-bold whitespace-pre-line">
+      <span className="text-center text-4xl font-bold whitespace-pre-line md:text-5xl">
         Featured Project
       </span>
 
-      <div className="grid w-full grid-cols-2 gap-6 py-15">
+      <div className="grid w-full grid-cols-12 gap-6 py-15">
         <ProjectCard src="/project/project1.png" col={1} />
         <ProjectCard src="/project/project2.png" col={1} />
         <ProjectCard src="/project/project3.png" col={1} />

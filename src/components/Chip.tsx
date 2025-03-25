@@ -4,7 +4,7 @@ import React from 'react';
 const Chip = ({ color = 'white' }: { color?: 'white' | 'black' }) => {
   return (
     <div
-      className={cn('rounded-full px-5 py-2.5', {
+      className={cn('rounded-full px-4 py-2 @sm:px-5 @sm:py-2.5', {
         'bg-white': color === 'white',
         'bg-[#202020]': color === 'black',
       })}

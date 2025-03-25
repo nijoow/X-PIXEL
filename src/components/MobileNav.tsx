@@ -26,14 +26,14 @@ const MobileNav = () => {
     <>
       <button
         onClick={handleClickButton}
-        className="relative z-40 flex h-10 w-10 flex-col justify-between p-2 md:hidden"
+        className="relative z-40 flex flex-col items-center justify-between gap-2 rounded-full p-3 backdrop-blur-3xl lg:hidden"
       >
         {/* Top Line */}
         <motion.div
           className="h-1 w-8 rounded-full bg-white"
           animate={{
             rotate: open ? 135 : 0,
-            y: open ? 10 : 0,
+            y: open ? 12 : 0,
           }}
           transition={{ duration: 0.3 }}
         />
@@ -50,7 +50,7 @@ const MobileNav = () => {
           className="h-1 w-8 rounded-full bg-white"
           animate={{
             rotate: open ? -135 : 0,
-            y: open ? -10 : 0,
+            y: open ? -12 : 0,
           }}
           transition={{ duration: 0.3 }}
         />

@@ -9,12 +9,14 @@ const Section1 = () => {
         <div className="flex size-4 items-center justify-center rounded-full bg-[#168FFF]/15">
           <div className="size-1.5 rounded-full bg-[#168FFF]" />
         </div>
-        <span>Subscriptions to the Business Agency team, Xpixel</span>
+        <span className="text-xs md:text-base">
+          Subscriptions to the Business Agency team, Xpixel
+        </span>
       </div>
 
       <div className="h-6" />
 
-      <span className="font-pretendard text-center text-[56px] font-bold whitespace-pre-line">
+      <span className="font-pretendard text-center text-[24px] font-bold whitespace-pre-line md:text-[42px] lg:text-[56px]">
         {`어떤 비즈니스를 하고 싶으신가요? 
         지금 바로 만들어드립니다.`}
       </span>

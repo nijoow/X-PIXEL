@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={`${suit.variable} ${pretendard.variable} h-full antialiased`}
       >
-        <div className="font-suit max-w-screen overflow-auto">
+        <div className="font-suit max-w-screen">
           <Header />
           {children}
         </div>

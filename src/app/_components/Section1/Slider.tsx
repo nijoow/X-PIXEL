@@ -68,7 +68,10 @@ const Slider = () => {
   return (
     <Swiper
       spaceBetween={64}
-      slidesPerView={3}
+      breakpoints={{
+        640: { slidesPerView: 2 }, // 태블릿 (640px 이상) → 2개
+        1024: { slidesPerView: 3 }, // 데스크탑 (1024px 이상) → 3개
+      }}
       loop={true}
       className="flex h-fit w-full flex-col"
     >

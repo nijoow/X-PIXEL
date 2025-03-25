@@ -3,19 +3,21 @@ import React from 'react';
 
 const SubscriptionPlan = () => {
   return (
-    <section className="bg-white py-40">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center px-8">
-        <span className="text-center text-5xl font-bold whitespace-pre-line text-black">
+    <section className="bg-white py-24 sm:py-40">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center px-6 sm:px-8">
+        <span className="text-center text-4xl font-bold whitespace-pre-line text-black md:text-5xl">
           Subscription Plan
         </span>
 
         <div className="h-16" />
 
-        <div className="grid w-full grid-cols-2 gap-6">
-          <div className="col-span-1 flex flex-col gap-12 rounded-[48px] bg-[#F6F6F6] p-12">
-            <div className="flex gap-4">
-              <Image src="/starter.svg" alt="starter" width={80} height={80} />
-              <div className="flex flex-col justify-center gap-2">
+        <div className="grid w-full grid-cols-12 gap-6">
+          <div className="col-span-12 flex flex-col gap-12 rounded-[48px] bg-[#F6F6F6] p-8 sm:p-12 lg:col-span-6">
+            <div className="flex items-center gap-4">
+              <div className="relative h-16 w-16 sm:h-20 sm:w-20">
+                <Image src="/starter.svg" alt="starter" fill />
+              </div>
+              <div className="flex flex-col justify-center gap-1">
                 <span className="text-[1.75rem] font-bold text-[#101010]">
                   Starter
                 </span>
@@ -32,10 +34,12 @@ const SubscriptionPlan = () => {
             </span>
 
             <div className="flex items-baseline gap-2 leading-none">
-              <span className="bg-gradient-to-r from-[#168FFF] from-17% via-[#64B6FF] via-44% to-[#4DDEFF] to-81% bg-clip-text text-[5rem] font-bold text-transparent">
+              <span className="bg-gradient-to-r from-[#168FFF] from-17% via-[#64B6FF] via-44% to-[#4DDEFF] to-81% bg-clip-text text-[4rem] font-bold text-transparent sm:text-[5rem]">
                 200
               </span>
-              <span className="text-[2.5rem] text-[#101010]">만 원 / 월</span>
+              <span className="text-[2rem] text-[#101010] sm:text-[2.5rem]">
+                만 원 / 월
+              </span>
             </div>
 
             <button
@@ -58,9 +62,11 @@ const SubscriptionPlan = () => {
             </div>
           </div>
 
-          <div className="col-span-1 flex flex-col gap-12 rounded-[48px] bg-[#101010] p-12">
-            <div className="flex gap-4">
-              <Image src="/growth.svg" alt="starter" width={80} height={80} />
+          <div className="col-span-12 flex flex-col gap-12 rounded-[48px] bg-[#101010] p-8 sm:p-12 lg:col-span-6">
+            <div className="flex items-center gap-4">
+              <div className="relative h-16 w-16 sm:h-20 sm:w-20">
+                <Image src="/growth.svg" alt="growth" fill />
+              </div>
               <div className="flex flex-col justify-center gap-2">
                 <span className="text-[1.75rem] font-bold text-white">
                   Growth
@@ -77,10 +83,12 @@ const SubscriptionPlan = () => {
             </span>
 
             <div className="flex items-baseline gap-2 leading-none">
-              <span className="bg-gradient-to-r from-[#168FFF] from-17% via-[#64B6FF] via-44% to-[#4DDEFF] to-81% bg-clip-text text-[5rem] font-bold text-transparent">
+              <span className="bg-gradient-to-r from-[#168FFF] from-17% via-[#64B6FF] via-44% to-[#4DDEFF] to-81% bg-clip-text text-[4rem] font-bold text-transparent sm:text-[5rem]">
                 350
               </span>
-              <span className="text-[2.5rem] text-white">만 원 / 월</span>
+              <span className="text-[2rem] text-white sm:text-[2.5rem]">
+                만 원 / 월
+              </span>
             </div>
 
             <button

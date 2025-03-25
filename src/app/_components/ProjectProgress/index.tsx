@@ -13,7 +13,7 @@ const ProgressStep = ({
   description: string;
 }) => {
   return (
-    <div className="flex flex-col border-b border-[#202020] py-15">
+    <div className="col-span-12 flex flex-col border-b border-[#202020] py-15 sm:col-span-6 lg:col-span-4">
       <div className="flex w-fit items-center gap-3 rounded-full bg-[#202020] p-2 pr-5.5 text-[#808080]">
         <Image src={src} alt="UI/UX" width={36} height={36} />
         <span>Step {index + 1}</span>
@@ -33,11 +33,11 @@ const ProgressStep = ({
 const ProjectProgress = () => {
   return (
     <section className="flex flex-col items-center">
-      <span className="text-center text-5xl font-bold whitespace-pre-line">
+      <span className="text-center text-4xl font-bold whitespace-pre-line md:text-5xl">
         Project Progress
       </span>
 
-      <div className="grid w-full grid-cols-3 gap-6 py-15">
+      <div className="grid w-full grid-cols-12 gap-6 py-15">
         <ProgressStep
           src="/step1.svg"
           index={0}

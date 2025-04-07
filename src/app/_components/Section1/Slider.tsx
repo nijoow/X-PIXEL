@@ -6,10 +6,12 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { motion } from 'framer-motion';
+import { fadeInAnimation } from '@/utils/animation';
 
 const SliderContent = () => {
   return (
-    <div className="w-full">
+    <motion.div className="w-full" {...fadeInAnimation}>
       <div className="flex items-center gap-3">
         <div className="size-14 rounded-full bg-white"></div>
         <div className="flex flex-col">
@@ -32,7 +34,7 @@ const SliderContent = () => {
         an absolutely stellar job on our new website. Everything was on point
         and better than our team expected.”
       </span>
-    </div>
+    </motion.div>
   );
 };
 

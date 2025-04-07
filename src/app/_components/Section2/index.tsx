@@ -1,27 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import Chip from '../../../components/Chip';
-
-const GridItem = ({ src, title }: { src: string; title: string }) => {
-  return (
-    <div className="col-span-12 flex flex-col p-8 sm:col-span-6 sm:p-12 lg:col-span-4">
-      <Image src={src} alt="UI/UX" width={88} height={88} />
-
-      <div className="h-[3.75rem] sm:h-[4.75rem]" />
-
-      <span className="text-[1.75rem] font-bold">{title}</span>
-
-      <div className="h-8" />
-
-      <div className="flex flex-wrap gap-2">
-        <Chip />
-        <Chip />
-        <Chip /> <Chip />
-        <Chip />
-      </div>
-    </div>
-  );
-};
+import GridItem from './Griditem';
 
 const Section2 = () => {
   return (
@@ -38,7 +16,7 @@ const Section2 = () => {
 
       <div className="h-15" />
 
-      <div className="grid grid-cols-12 rounded-[40px] border-t border-l border-[#202020] [&>div]:border-r [&>div]:border-b [&>div]:border-[#202020]">
+      <div className="grid grid-cols-12 divide-x divide-y divide-[#202020] overflow-hidden rounded-[40px] border border-[#202020]">
         <GridItem src="/ui-ux__dark.svg" title="UI/UX" />
         <GridItem src="/branding__dark.svg" title="Branding" />
         <GridItem src="/contents__dark.svg" title="Contents" />

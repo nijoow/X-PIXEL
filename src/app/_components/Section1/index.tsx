@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import React from 'react';
 import Slider from './Slider';
+import HeroBanner from './HeroBanner';
 
 const Section1 = () => {
   return (
@@ -32,9 +32,7 @@ const Section1 = () => {
 
       <div className="h-16" />
 
-      <div className="relative aspect-[1440/560] w-full">
-        <Image src="/hero-banner.png" alt="About" fill />
-      </div>
+      <HeroBanner />
 
       <div className="h-10" />
 

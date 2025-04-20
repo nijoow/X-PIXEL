@@ -4,12 +4,11 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const images = [
-  '/hero-banner.png',
-  '/project/project1.png',
-  '/project/project2.png',
-  '/project/project3.png',
-  '/project/project4.png',
-  '/project/project5.png',
+  '/project/banner01.png',
+  '/project/banner02.png',
+  '/project/banner03.png',
+  '/project/banner04.png',
+  '/project/banner05.png',
 ];
 
 const HeroBanner = () => {
@@ -18,7 +17,7 @@ const HeroBanner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 300);
+    }, 700);
 
     return () => clearInterval(interval);
   }, []);
